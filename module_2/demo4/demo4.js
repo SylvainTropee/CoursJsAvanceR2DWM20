@@ -50,3 +50,54 @@ console.log(han)
 
 console.log(jarjarbinks)
 console.log(anakin.description())
+
+
+
+
+//// Syntaxe ES6
+
+const million = 1_000_000
+console.log(million)
+
+let michel = {
+    name : "Michel",
+    address : null //street
+}
+
+console.log(michel.address?.street ?? "rue des acacias")
+
+//spread
+let tab1 = [1,2,3]
+let tab2 = [4,5,6]
+
+tab1.push(...tab2)
+console.log(tab1)
+
+function infinityParam(...args){
+    console.log(args)
+}
+
+infinityParam("Michel", 123, "coucou", true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
