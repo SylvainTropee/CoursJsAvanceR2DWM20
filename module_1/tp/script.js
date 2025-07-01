@@ -44,7 +44,7 @@ function checkLetter(event) {
 
     document.getElementById('wordToFind').innerText = randomDomWord.join('')
     if(!isOk){
-        attempt--
+        document.getElementById('nbAttempt').innerText = --attempt
     }
 
     checkWin()
@@ -60,14 +60,15 @@ function checkWin(){
         alert("Rejoue !")
     }
 
-
-
 }
 
 
 function init() {
     generateLetters()
     displayRandomWord()
+    document.getElementById('reset').addEventListener('click', function (){
+        window.location.reload()
+    })
 }
 
 
